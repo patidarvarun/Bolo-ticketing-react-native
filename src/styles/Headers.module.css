@@ -1,0 +1,307 @@
+.div {
+  /* background-color: var(--Neutral-02, #f4f4f4); */
+  background-color: white;
+  display: flex;
+  padding-bottom: 7px;
+  flex-direction: column;
+}
+.div2 {
+  justify-content: space-between;
+  /* box-shadow: 1px 0px 0px 0px #f4f4f4 inset; */
+  display: flex;
+  margin-top: 4px;
+  width: 100%;
+  gap: 20px;
+  font-size: 15px;
+  color: #000;
+  font-weight: 700;
+  letter-spacing: -0.15px;
+  line-height: 160%;
+  padding: 24px 43px;
+  max-width: 1600px;
+  margin: 10px auto 0;
+}
+@media (max-width: 991px) {
+  .div2 {
+    max-width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+  }
+  .div {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+  }
+}
+.img {
+  aspect-ratio: 3.23;
+  object-fit: auto;
+  object-position: center;
+  width: 167px;
+  max-width: 100%;
+  cursor: pointer;
+}
+.div3 {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin: auto 0;
+}
+
+.div3 > div > span {
+  font-family: Inter, sans-serif;
+  justify-content: center;
+  border-radius: 12px;
+  border: 1px solid #000;
+  flex-grow: 1;
+  white-space: nowrap;
+  padding: 0px 35px;
+  cursor: pointer;
+  height: 48px;
+  line-height: 46px;
+  font-size: 15px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.div4 span:hover {
+  background: #21b6a8;
+  color: white;
+  /* background: #419189; */
+  /* border: 1px solid #21b6a8; */
+}
+@media (max-width: 991px) {
+  .div4 {
+    white-space: initial;
+    padding: 0 20px;
+  }
+  .div4 span:hover {
+    background: #419189;
+  }
+}
+.div5 > span {
+  font-family: Inter, sans-serif;
+  justify-content: center;
+  border-radius: 12px;
+  border: 1px solid #000;
+  flex-grow: 1;
+  white-space: nowrap;
+  padding: 12px 27px;
+  cursor: pointer;
+}
+.div5 > span:hover {
+  background: #21b6a8;
+  color: white;
+  /* background: #419189; */
+  /* border: 1px solid #21b6a8; */
+}
+@media (max-width: 991px) {
+  .div5 {
+    white-space: initial;
+    padding: 0 20px;
+  }
+  .div5:hover {
+    background: #419189;
+  }
+}
+
+.div5css > span {
+  font-family: Inter, sans-serif;
+  justify-content: center;
+  border-radius: 12px;
+  border: 1px solid #000;
+  flex-grow: 1;
+  white-space: nowrap;
+  padding: 12px 27px;
+  cursor: pointer;
+}
+.div5css > span:hover {
+  background: #21b6a8;
+  color: #21b6a8;
+  /* background: #419189; */
+  /* border: 1px solid #21b6a8; */
+}
+@media (max-width: 991px) {
+  .div5css {
+    white-space: initial;
+    padding: 0 20px;
+  }
+  .div5css:hover {
+    background: #419189;
+  }
+}
+
+.div6 > span {
+  font-family: Inter, sans-serif;
+  justify-content: center;
+  border-radius: 12px;
+  border: 1px solid #000;
+  flex-grow: 1;
+  padding: 12px 40px;
+  cursor: pointer;
+}
+.div6 span:hover {
+  background: #419189;
+}
+@media (max-width: 991px) {
+  .div6 {
+    padding: 0 20px;
+  }
+  .div6:hover {
+    background: #419189;
+  }
+}
+.div7 {
+  display: flex;
+  margin-top: 30px;
+  width: 100%;
+  justify-content: space-between;
+  gap: 20px;
+}
+@media (max-width: 991px) {
+  .div7 {
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+}
+.div8 {
+  justify-content: space-between;
+  border-radius: 8.856px;
+  background-color: var(--Neutral-01, #fcfcfc);
+  display: flex;
+  flex-basis: 0%;
+  flex-direction: column;
+  padding: 19px 24px 50px;
+}
+@media (max-width: 991px) {
+  .div8 {
+    padding: 0 20px;
+  }
+}
+
+.menuIcon {
+  cursor: pointer;
+}
+.sidebar {
+  /* Your existing styles */
+  transition: transform 0.3s ease;
+  transform: translateX(-100%);
+  width: 50%; /* Set sidebar width to 40% of screen */
+  background-color: #fff; /* Example background color */
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding-top: 20px; /* Adjust to fit your header height */
+  z-index: 999; /* Ensure sidebar is above other content */
+}
+
+.showSidebar {
+  transform: translateX(0);
+}
+
+.sidebarList {
+  padding: 0;
+  list-style-type: none;
+}
+
+.sidebarList li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc; /* Example border color */
+}
+
+.sidebarList li:last-child {
+  border-bottom: none; /* Remove border from last item */
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+  z-index: 998; /* Ensure overlay is below sidebar */
+  display: none; /* Initially hide the overlay */
+}
+
+.showOverlay {
+  display: block; /* Show the overlay when sidebar is open */
+}
+
+.showOverlay ~ .div2 {
+  opacity: 0.5; /* Reduce opacity of .div2 when overlay is shown */
+}
+
+.showOverlay ~ .div7 {
+  opacity: 0.5; /* Reduce opacity of .div7 when overlay is shown */
+}
+
+@media (max-width: 991px) {
+  .div {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+  }
+
+  .sidebarList li:last-child {
+    border-bottom: 1px solid #ccc; /* Remove border from last item */
+  }
+}
+.div5 .div10 {
+  display: none;
+}
+.div5:hover .div10 {
+  display: block;
+  position: absolute;
+  max-width: 190px;
+  width: 100%;
+  padding-top: 15px;
+  z-index: 222;
+}
+.div10 ul li {
+  list-style: none;
+  padding: 10px 20px;
+  background: #fff;
+  box-shadow: 0px 3px 5px -2px #ccc;
+  border-bottom: 1px solid #f4f4f4;
+  cursor: pointer;
+}
+
+.div10 ul li:hover {
+  background: #21b6a8;
+  color: white;
+  border-radius: 2px;
+}
+
+.div5css .div10 {
+  display: none;
+}
+.div5css:hover .div10 {
+  display: block;
+  position: absolute;
+  max-width: 190px;
+  width: 100%;
+  padding-top: 15px;
+  z-index: 222;
+}
+
+.widgetcss {
+  background: #009688;
+  color: #ffffff;
+  position: fixed;
+  display: flex;
+  font-weight: 600;
+  justify-content: space-between;
+  z-index: 98;
+  bottom: 25px;
+  right: 30px;
+  font-size: 15px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  box-shadow: 0 1px 15px rgba(32, 33, 36, 0.28);
+  cursor: pointer;
+}

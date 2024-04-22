@@ -1,0 +1,202 @@
+#bt_widgetForm button,
+#bt_widgetForm button:hover {
+  background-color: #21b6a8;
+}
+#bt_widgetForm button,
+.bt_buttonshow {
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+#bt_widget {
+  width: fit-content;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background-color: #fff;
+  right: 20px;
+  overflow-y: scroll;
+  height: 60vh;
+  bottom: 90px;
+  z-index: 999;
+  position: fixed;
+}
+form#bt_widgetForm {
+  padding-top: 16px;
+  width: 80% !important;
+  margin-right: 15px !important;
+}
+input#phone {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: calc(100% - 16px);
+}
+#bt_widget h2 {
+  font-size: 1.2em;
+  position: relative;
+  left: -51px;
+  color: #fff;
+}
+#bt_widgetForm label {
+  display: block;
+  margin-bottom: 5px;
+}
+#bt_widgetForm input[type="email"],
+#bt_widgetForm input[type="text"],
+#bt_widgetForm textarea {
+  width: calc(100% - 16px);
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+#bt_widgetForm textarea {
+  height: 50px;
+}
+#bt_widgetForm button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 7px;
+  margin-bottom: 9px;
+  width: calc(100% - 16px);
+}
+.bt_widget-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: baseline;
+  width: 25% !important;
+}
+.bt_widget-header,
+.bt_widget-headers {
+  background: #21b6a8;
+  width: 100%;
+  border-top-left-radius: 11px;
+  border-top-right-radius: 11px;
+  display: flex;
+}
+.bt_widget-header {
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: baseline;
+  padding: 13px;
+}
+.bt_widget-headers {
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+.bt_widget-logo {
+  width: 50px;
+  height: auto;
+  background: #fff;
+  border: 1px solid #fff;
+  padding: 3px;
+  position: relative;
+  top: 5px;
+  left: -45px;
+}
+.bt_widget-close-button {
+  border: none;
+  background: 0 0;
+  cursor: pointer;
+  font-size: 1.2em;
+  color: #fff;
+  position: relative;
+  padding: 0;
+  left: 42px;
+}
+.bt_buttonshow {
+  background: #eefffd;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  z-index: 98;
+  bottom: 25px;
+  right: 30px;
+  font-size: 15px;
+  padding: 10px 15px;
+  border-radius: 30px;
+  box-shadow: 0 1px 15px rgba(32, 33, 36, 0.28);
+  border: none;
+}
+@media (max-width: 991px) {
+  #bt_widget {
+    width: 54% !important;
+    margin-right: auto !important;
+    overflow-y: scroll;
+    height: 44vh;
+  }
+  form#bt_widgetForm {
+    width: 85% !important;
+  }
+}
+@media (max-width: 767px) {
+  #bt_widget {
+    width: fit-content !important;
+    margin-right: 11px !important;
+    overflow-y: scroll;
+    height: 60vh;
+  }
+  form#bt_widgetForm {
+    width: 90% !important;
+  }
+}
+@media (max-width: 480px) {
+  #bt_widget {
+    width: fit-content !important;
+    margin-right: 15px !important;
+    right: auto;
+    left: 25px;
+    bottom: 80px;
+  }
+  form#bt_widgetForm {
+    width: 88% !important;
+  }
+}
+@media (max-width: 320px) {
+  #bt_widget h2,
+  .bt_widget-close-button {
+    font-size: 1.2em;
+    color: #fff;
+    position: relative;
+  }
+  #bt_widget {
+    width: fit-content !important;
+    margin-right: 15px !important;
+  }
+  .bt_widget-logo {
+    width: 50px;
+    height: auto;
+    background: #fff;
+    border: 1px solid #fff;
+    padding: 3px;
+    position: relative;
+    top: 5px;
+    left: -29px;
+  }
+  #bt_widget h2 {
+    left: -25px;
+  }
+  .bt_widget-close-button {
+    border: none;
+    background: 0 0;
+    cursor: pointer;
+    padding: 0;
+    left: 23px;
+  }
+  form#bt_widgetForm {
+    width: 83% !important;
+  }
+}
+.bt_widget_error {
+  font-size: 1.2em !important;
+  left: 10px !important;
+  color: #000 !important;
+}
+div#bt_widget_error_container {
+  color: red;
+  padding-bottom:10px;
+}
